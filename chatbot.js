@@ -6,7 +6,7 @@
 // =====================================================
 
 const WORKER_URL = 'https://aella-emman-chat.foraellaandemman01.workers.dev'; // ← Change this after deploying your Worker
-const AI_MODEL = 'google/gemini-3-flash-preview';
+const AI_MODEL = 'qwen/qwen3-next-80b-a3b-instruct:free'; // Free, no region restrictions
 
 // =====================================================
 // BUSINESS KNOWLEDGE BASE
