@@ -5,8 +5,7 @@
 // Change the WORKER_URL below to your Cloudflare Worker URL
 // =====================================================
 
-const WORKER_URL = 'https://aella-emman-chat.foraellaandemman01.workers.dev'; // ← Change this after deploying your Worker
-const AI_MODEL = 'openrouter/free'; // Auto-picks best available free model for your region
+const WORKER_URL = 'https://aella-emman-chat.foraellaandemman01.workers.dev';
 
 // =====================================================
 // BUSINESS KNOWLEDGE BASE
@@ -201,18 +200,15 @@ async function sendMessage(text) {
     showTyping();
 
     try {
-        // Call YOUR Cloudflare Worker (not OpenRouter directly)
+        // Call Cloudflare Worker (uses Cloudflare AI - no external API needed)
         const response = await fetch(WORKER_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: AI_MODEL,
                 messages: [
                     { role: 'system', content: BUSINESS_KNOWLEDGE },
                     ...chatHistory
-                ],
-                max_tokens: 400,
-                temperature: 0.7,
+                ]
             })
         });
 
