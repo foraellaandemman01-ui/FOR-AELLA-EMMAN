@@ -5,7 +5,7 @@
 // Change the WORKER_URL below to your Cloudflare Worker URL
 // =====================================================
 
-const WORKER_URL = 'https://aella-emman-chat.YOUR-SUBDOMAIN.workers.dev'; // ← Change this after deploying your Worker
+const WORKER_URL = 'https://aella-emman-chat.foraellaandemman01.workers.dev'; // ← Change this after deploying your Worker
 const AI_MODEL = 'google/gemini-3-flash-preview';
 
 // =====================================================
