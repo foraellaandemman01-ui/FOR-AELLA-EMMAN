@@ -4,51 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signage Making | Aella & Emman Advertising</title>
+    <meta name="description" content="Custom signage making by Aella & Emman Advertising in Bukidnon — illuminated signs, 3D lettering, backlit LED, and commercial storefront signage in Maramag.">
+    <meta name="keywords" content="signage making Bukidnon, custom signs Maramag, LED signage, 3D lettering Philippines, backlit signs">
+    <meta property="og:title" content="Signage Making | Aella & Emman Advertising">
+    <meta property="og:description" content="Custom illuminated signs, 3D lettering, and backlit LED signage in Maramag, Bukidnon.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23000'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'>A%26E</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-
-        .dark-btn {
-            background: #000;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-        .dark-btn:hover {
-            background: #333;
-            transform: translateY(-1px);
-        }
-
-        .gallery-item {
-            transition: all 0.3s ease;
-            border: 1px solid #e5e7eb;
-        }
-        .gallery-item:hover {
-            border-color: #000;
-            transform: translateY(-4px);
-        }
-        .gallery-item img {
-            filter: grayscale(100%);
-            transition: filter 0.5s ease;
-        }
-        .gallery-item:hover img {
-            filter: grayscale(0%);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-black antialiased">
 
-    <nav class="fixed w-full z-50 glass border-b border-gray-100">
+    <nav class="fixed w-full z-50 glass border-b border-gray-100" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between h-20 items-center">
                 <a href="index.html" class="font-extrabold text-xl tracking-tighter uppercase">FOR AELLA <span class="text-gray-400">&</span> EMMAN</a>
@@ -58,10 +29,19 @@
                     <a href="index.html#projects" class="hover:text-gray-500 transition">Portfolio</a>
                     <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
                 </div>
-                <button id="menuBtn" class="md:hidden text-xl"><i class="fas fa-bars"></i></button>
+                <button id="menuBtn" class="md:hidden text-xl" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
+
+    <div id="mobileMenu" class="md:hidden" role="navigation" aria-label="Mobile navigation">
+        <div class="flex flex-col p-6 gap-4 text-center font-bold uppercase tracking-widest text-xs">
+            <a href="index.html" class="mobile-link py-2">Home</a>
+            <a href="index.html#services" class="mobile-link py-2">Services</a>
+            <a href="index.html#projects" class="mobile-link py-2">Portfolio</a>
+            <a href="index.html#contact" class="mobile-link py-2">Contact</a>
+        </div>
+    </div>
 
     <section class="pt-44 pb-20 px-6 max-w-7xl mx-auto">
         <p class="text-[11px] font-bold uppercase tracking-[0.3em] mb-6 text-gray-500">Service Specialty</p>
@@ -86,24 +66,38 @@
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="gallery-item bg-white overflow-hidden">
-                    <img src="1.jpg" alt="Business sign" class="w-full h-72 object-cover">
+                    <img src="1.jpg" alt="Quezon Hawkers Hub illuminated storefront signage" class="w-full h-72 object-cover">
                     <div class="p-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Storefront Sign</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">Custom illuminated commercial signage.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Commercial Signage</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Custom illuminated LED storefront signage with vibrant backlit design.</p>
                     </div>
                 </div>
                 <div class="gallery-item bg-white overflow-hidden">
-                    <img src="4.jpg" alt="Backlit signage" class="w-full h-72 object-cover">
+                    <img src="3.jpg" alt="The Margarette Business Hotel backlit channel letter signage" class="w-full h-72 object-cover">
                     <div class="p-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Backlit LED</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">High-visibility outdoor lighting systems.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Backlit Channel Letters</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Premium halo-lit channel letters for hotel and commercial branding.</p>
                     </div>
                 </div>
                 <div class="gallery-item bg-white overflow-hidden">
-                    <img src="5.jpg" alt="Store sign" class="w-full h-72 object-cover">
+                    <img src="4.jpg" alt="Knights of Columbus illuminated emblem and crest signage" class="w-full h-72 object-cover">
                     <div class="p-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">3D Lettering</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">Precision cut acrylic and metal fabrication.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Emblem Signage</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Precision-cut illuminated emblem and crest fabrication.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white overflow-hidden">
+                    <img src="5.jpg" alt="Julie's Bakeshop storefront signage with 3D cube corner unit" class="w-full h-72 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Storefront Build-Up</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Full storefront signage system with 3D corner cube installation.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white overflow-hidden">
+                    <img src="2.jpg" alt="Lambo stainless steel monument with mirror-finish 3D lettering" class="w-full h-72 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Monument Lettering</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Mirror-finish stainless steel monument with thumbs-up sculpture.</p>
                     </div>
                 </div>
             </div>
@@ -120,12 +114,40 @@
         &copy; 2026 Aella & Emman Advertising. Serving Bukidnon.
     </footer>
 
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
     <script>
+        // Mobile Menu Logic
         const menuBtn = document.getElementById('menuBtn');
-        // Simple toggle for mobile menu (Add mobile menu HTML if needed, matching index.html)
-        menuBtn.addEventListener('click', function() {
-            alert('Mobile menu functionality matches index.html design.');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.style.display === 'none' || mobileMenu.style.display === '';
+            mobileMenu.style.display = isHidden ? 'block' : 'none';
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+                const icon = menuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Back to Top
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
+    <script src="chatbot.js"></script>
 </body>
 </html>

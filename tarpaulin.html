@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarpaulin Printing | Aella & Emman Advertising</title>
+    <meta name="description" content="Large-format tarpaulin printing by Aella & Emman Advertising — weather-resistant banners, event backdrops, and outdoor advertising in Maramag, Bukidnon.">
+    <meta name="keywords" content="tarpaulin printing Bukidnon, banner printing Maramag, large format printing, outdoor advertising Philippines">
+    <meta property="og:title" content="Tarpaulin Printing | Aella & Emman Advertising">
+    <meta property="og:description" content="Vibrant, weather-resistant tarpaulin printing for events and outdoor advertising in Maramag, Bukidnon.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23000'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'>A%26E</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-        .dark-btn { background: #000; color: #fff; transition: all 0.3s ease; }
-        .dark-btn:hover { background: #333; transform: translateY(-1px); }
-        .gallery-item { transition: all 0.3s ease; border: 1px solid #e5e7eb; }
-        .gallery-item:hover { border-color: #000; transform: translateY(-4px); }
-        .gallery-item img { filter: grayscale(100%); transition: filter 0.5s ease; }
-        .gallery-item:hover img { filter: grayscale(0%); }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-black antialiased">
 
-    <nav class="fixed w-full z-50 glass border-b border-gray-100">
+    <nav class="fixed w-full z-50 glass border-b border-gray-100" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between h-20 items-center">
                 <a href="index.html" class="font-extrabold text-xl tracking-tighter uppercase">FOR AELLA <span class="text-gray-400">&</span> EMMAN</a>
@@ -33,10 +29,19 @@
                     <a href="index.html#projects" class="hover:text-gray-500 transition">Portfolio</a>
                     <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
                 </div>
-                <button id="menuBtn" class="md:hidden text-xl"><i class="fas fa-bars"></i></button>
+                <button id="menuBtn" class="md:hidden text-xl" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
+
+    <div id="mobileMenu" class="md:hidden" role="navigation" aria-label="Mobile navigation">
+        <div class="flex flex-col p-6 gap-4 text-center font-bold uppercase tracking-widest text-xs">
+            <a href="index.html" class="mobile-link py-2">Home</a>
+            <a href="index.html#services" class="mobile-link py-2">Services</a>
+            <a href="index.html#projects" class="mobile-link py-2">Portfolio</a>
+            <a href="index.html#contact" class="mobile-link py-2">Contact</a>
+        </div>
+    </div>
 
     <section class="pt-44 pb-20 px-6 max-w-7xl mx-auto">
         <p class="text-[11px] font-bold uppercase tracking-[0.3em] mb-6 text-gray-500">Large Format Solutions</p>
@@ -53,36 +58,38 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-end mb-12">
                 <div>
-                    <h2 class="text-[11px] font-bold uppercase tracking-[0.3em] mb-2 text-gray-400">Portfolio</h2>
-                    <p class="text-3xl font-extrabold tracking-tighter">RECENT TARP WORKS</p>
+                    <h2 class="text-[11px] font-bold uppercase tracking-[0.3em] mb-2 text-gray-400">Our Work</h2>
+                    <p class="text-3xl font-extrabold tracking-tighter">CRAFTSMANSHIP SHOWCASE</p>
                 </div>
+                <p class="hidden md:block text-gray-400 text-xs font-medium max-w-xs text-right">The same precision and quality we bring to every project.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="gallery-item bg-white overflow-hidden">
-                    <img src="3.jpg" alt="Event tarpaulin" class="w-full h-72 object-cover">
+                    <img src="1.jpg" alt="Quezon Hawkers Hub commercial signage showcasing large-format print quality" class="w-full h-72 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Large-Format Prints</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">High-resolution, UV-resistant printing for maximum outdoor impact.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white overflow-hidden">
+                    <img src="5.jpg" alt="Julie's Bakeshop full storefront tarpaulin and signage installation" class="w-full h-72 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Storefront Wraps</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed">Full exterior branding with durable, weather-resistant materials.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white overflow-hidden">
+                    <img src="3.jpg" alt="The Margarette Business Hotel large-format signage" class="w-full h-72 object-cover">
                     <div class="p-8">
                         <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Event Signage</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">High-resolution event backdrops.</p>
-                    </div>
-                </div>
-                <div class="gallery-item bg-white overflow-hidden">
-                    <img src="4.jpg" alt="Outdoor banner" class="w-full h-72 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Outdoor Banners</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">Durable, weather-resistant materials.</p>
-                    </div>
-                </div>
-                <div class="gallery-item bg-white overflow-hidden">
-                    <img src="5.jpg" alt="Advertising tarp" class="w-full h-72 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2">Promo Media</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">Custom-sized advertising solutions.</p>
+                        <p class="text-gray-500 text-xs leading-relaxed">High-impact backdrops and displays for events and businesses.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-20 text-center">
+            <div class="mt-16 text-center">
+                <p class="text-gray-400 text-sm mb-8">Want to see more tarpaulin samples? Contact us for our full portfolio.</p>
                 <a href="index.html#contact" class="dark-btn inline-block px-12 py-5 text-xs font-bold uppercase tracking-widest">
                     Request Quote
                 </a>
@@ -93,5 +100,41 @@
     <footer class="py-12 border-t border-gray-100 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
         &copy; 2026 Aella & Emman Advertising. Serving Bukidnon.
     </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.style.display === 'none' || mobileMenu.style.display === '';
+            mobileMenu.style.display = isHidden ? 'block' : 'none';
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+                const icon = menuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Back to Top
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
